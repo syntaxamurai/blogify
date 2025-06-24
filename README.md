@@ -48,6 +48,3 @@ Blogify uses **Gemini AI** to help users generate blog post drafts.
 | Deployment  | Laravel Forge, Vercel (optional for AI UI)      |
 
 ---
-
-## 📁 Folder Structure
-
