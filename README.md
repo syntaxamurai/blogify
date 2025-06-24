@@ -81,3 +81,13 @@ php artisan migrate
 # 6. Serve the app
 php artisan serve
 
+---
+
+📌 License
+MIT License. Feel free to fork and use for learning or your own blog platform.
+
+💡 Inspiration
+This project is meant to help developers build fullstack apps using Laravel and explore AI-assisted content creation using Gemini AI. It’s designed to be portfolio-ready and scalable.
+
+
+
