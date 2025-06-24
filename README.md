@@ -141,7 +141,8 @@ This project is meant to help developers **build fullstack apps** using Laravel 
 
 ## 📬 Contact
 
-Made with passion by \syntaxamurai
-Portfolio: syntaxamurai-portfolio.vercel.app
+Made with passion by syntaxamurai.
+
+Portfolio: https://syntaxamurai-portfolio.vercel.app
 
 ```
