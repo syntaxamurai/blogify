@@ -48,3 +48,36 @@ Blogify uses **Gemini AI** to help users generate blog post drafts.
 | Deployment  | Laravel Forge, Vercel (optional for AI UI)      |
 
 ---
+
+## 📦 Installation
+
+### 🔧 Prerequisites:
+- PHP 8.x
+- Composer
+- MySQL or PostgreSQL
+- Node.js & npm (for Tailwind)
+- Gemini AI API Key (get one at [https://ai.google.dev](https://ai.google.dev))
+
+### 🧪 Setup:
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/yourusername/blogify.git
+cd blogify
+
+# 2. Install PHP dependencies
+composer install
+
+# 3. Install Tailwind CSS and build assets
+npm install && npm run dev
+
+# 4. Configure .env
+cp .env.example .env
+php artisan key:generate
+
+# 5. Setup database
+php artisan migrate
+
+# 6. Serve the app
+php artisan serve
+
