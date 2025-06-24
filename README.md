@@ -49,6 +49,26 @@ Blogify uses **Gemini AI** to help users generate blog post drafts.
 
 ---
 
+## 📁 Folder Structure
+
+```
+
+blogify/
+├── app/
+├── resources/
+│   └── views/          # Blade templates
+├── public/
+├── routes/
+│   └── web.php         # All route definitions
+├── database/
+│   └── migrations/
+├── config/
+├── .env                # Environment variables
+
+````
+
+---
+
 ## 📦 Installation
 
 ### 🔧 Prerequisites:
@@ -80,9 +100,48 @@ php artisan migrate
 
 # 6. Serve the app
 php artisan serve
+````
 
+---
 
+## 🤖 Setting Up Gemini AI
 
+1. Get your API key from [https://ai.google.dev](https://ai.google.dev)
+2. Add this to your `.env` file:
 
+   ```
+   GEMINI_API_KEY=your_key_here
+   ```
+3. In your controller (e.g., `AiController.php`), use the Gemini API to send prompts and return generated blog content.
 
+---
 
+## 🧠 Example Prompt to Gemini
+
+```php
+$response = Http::withToken(env('GEMINI_API_KEY'))->post('https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent', [
+    'contents' => [
+        ['parts' => [['text' => 'Write a blog post about Laravel vs Node.js for beginners']]]
+    ]
+]);
+```
+---
+
+## 📌 License
+
+MIT License. Feel free to fork and use for learning or your own blog platform.
+
+---
+
+## 💡 Inspiration
+
+This project is meant to help developers **build fullstack apps** using Laravel and explore **AI-assisted content creation** using Gemini AI. It’s designed to be portfolio-ready and scalable.
+
+---
+
+## 📬 Contact
+
+Made with passion by \syntaxamurai
+Portfolio: syntaxamurai-portfolio.vercel.app
+
+```
