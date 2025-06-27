@@ -1,7 +1,6 @@
 # 📝 Blogify – Fullstack Blog Platform with AI-Powered Content Creation
 
 **Blogify** is a fullstack blogging platform built with **Laravel** and **Tailwind CSS** that lets users **write, manage, and share blog posts** easily. It includes **user authentication**, **markdown support**, **commenting**, and a built-in integration with **Gemini AI** to help users generate blog content using prompts.
-
 ---
 
 ## 📸 Preview
