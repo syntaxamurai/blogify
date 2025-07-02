@@ -6,7 +6,7 @@
 
 ## 📸 Preview
 
-![Blogify Screenshot](./screenshot.png)
+![Blogify Screenshot]
 
 ---
 
